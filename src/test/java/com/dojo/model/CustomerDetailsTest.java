@@ -9,7 +9,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import lombok.extern.slf4j.Slf4j;
 @SpringBootTest
-@Slf4j
+// @Slf4j
 class CustomerDetailsTest {
 
 	@Test
@@ -34,6 +34,6 @@ class CustomerDetailsTest {
 		customerDetails.setContactNumber(1234567890);
 		customerDetails.setDOB(LocalDate.now());
 		customerDetails.setAccountType("test");
-		log.info(customerDetails.toString()); 
+		// log.info(customerDetails.toString()); 
 	}
 }

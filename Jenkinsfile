@@ -3,12 +3,13 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Build'
+                bat 'gradle clean'
+                bat 'gradle bootJar'
             }
         }
         stage('Test'){
             steps {
-                echo 'Test'
+                bat 'gradle testClasses'
             }
         }
         stage('deploy'){

@@ -10,6 +10,7 @@ pipeline {
         stage('Test'){
             steps {
                 bat 'gradle testClasses'
+                bat 'gradle test'
             }
         }
         stage('deploy'){
